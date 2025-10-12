@@ -1,0 +1,130 @@
+# Uncomment below for production with Netlify
+backend:
+  name: git-gateway
+  branch: main
+
+# Local development backend
+local_backend: true
+
+media_folder: "public/uploads"
+public_folder: "/uploads"
+
+locale: "ru"
+
+collections:
+  # Menu Items Collection
+  - name: "menu-items"
+    label: "Меню Позиции"
+    folder: "content/menu-items"
+    create: true
+    slug: "{{category}}-{{slug}}"
+    identifier_field: name
+    fields:
+      - { label: "Название", name: "name", widget: "string" }
+      - label: "Категория"
+        name: "category"
+        widget: "select"
+        options: ["coffee", "tea", "matcha"]
+        default: "coffee"
+      - { label: "Описание", name: "description", widget: "text" }
+      - label: "Размеры (л)"
+        name: "sizes"
+        widget: "list"
+        required: false
+        field: { label: "Размер", name: "size", widget: "string" }
+        hint: "Для чая оставьте пустым"
+      - label: "Цены (сом)"
+        name: "prices"
+        widget: "list"
+        field:
+          { label: "Цена", name: "price", widget: "number", value_type: "int" }
+        hint: "Укажите цены в том же порядке что и размеры"
+      - label: "Картинка"
+        name: "image"
+        widget: "image"
+        required: false
+        allow_multiple: false
+      - label: "Доступность"
+        name: "available"
+        widget: "boolean"
+        default: true
+      - label: "Порядок отображения"
+        name: "order"
+        widget: "number"
+        value_type: "int"
+        default: 1
+        hint: "Меньшее число = выше в списке"
+
+  # Promotions Collection
+  - name: "promotions"
+    label: "Акции"
+    folder: "content/promotions"
+    create: true
+    slug: "{{slug}}"
+    identifier_field: title
+    fields:
+      - { label: "Заголовок", name: "title", widget: "string" }
+      - { label: "Описание", name: "description", widget: "text" }
+      - label: "Скидка (%)"
+        name: "discount"
+        widget: "number"
+        value_type: "int"
+        required: false
+        hint: "Укажите процент скидки, если применимо"
+      - label: "Условия"
+        name: "terms"
+        widget: "text"
+        required: false
+      - label: "Активна"
+        name: "active"
+        widget: "boolean"
+        default: true
+      - label: "Иконка"
+        name: "icon"
+        widget: "string"
+        required: false
+        hint: "Emoji или название иконки"
+
+  # Site Settings
+  - name: "settings"
+    label: "Настройки Сайта"
+    files:
+      - label: "Общие настройки"
+        name: "general"
+        file: "content/settings/general.json"
+        fields:
+          - {
+              label: "Название заведения",
+              name: "siteName",
+              widget: "string",
+              default: "Кофе и Чай",
+            }
+          - { label: "Логотип", name: "logo", widget: "image", required: false }
+          - label: "Часы работы"
+            name: "hours"
+            widget: "object"
+            fields:
+              - {
+                  label: "Будни",
+                  name: "weekdays",
+                  widget: "string",
+                  default: "08:00 - 22:00",
+                }
+              - {
+                  label: "Выходные",
+                  name: "weekend",
+                  widget: "string",
+                  default: "09:00 - 23:00",
+                }
+          - label: "Контакты"
+            name: "contact"
+            widget: "object"
+            fields:
+              - { label: "Телефон", name: "phone", widget: "string" }
+              - { label: "Адрес", name: "address", widget: "text" }
+              - {
+                  label: "Instagram",
+                  name: "instagram",
+                  widget: "string",
+                  required: false,
+                }

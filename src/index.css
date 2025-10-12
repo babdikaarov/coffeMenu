@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-gradient-to-br from-secondary/30 to-white;
+    @apply text-dark;
+  }
+}
+
+@layer components {
+  .menu-card {
+    @apply bg-white rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300;
+    @apply border border-primary/10;
+  }
+
+  .category-heading {
+    @apply text-3xl font-bold text-primary mb-6;
+    @apply border-b-4 border-accent inline-block pb-2;
+  }
+
+  .price-badge {
+    @apply bg-primary text-white px-3 py-1 rounded-full text-sm font-semibold;
+  }
+}
