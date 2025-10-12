@@ -1,5 +1,5 @@
 ---
-name: Американо beksultan
+name: Американо
 category: coffee
 description: Классический черный кофе, приготовленный на основе эспрессо и горячей воды.
 variants:
