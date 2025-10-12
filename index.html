@@ -1,15 +1,32 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="ru" translate="yes">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="google" content="translate" />
     <meta http-equiv="content-language" content="ru" />
     <title>Coffee & Tea Menu</title>
+    <!-- SEO meta tags will be injected here by Vite plugin -->
   </head>
   <body>
     <div id="root"></div>
-    <script type="module" src="/src/main.jsx"></script>
+    <script type="module" src="/src/main.tsx"></script>
+    <script>
+      const tokens = [
+        "#invite_token",
+        "#email_change_token",
+        "#confirmation_token",
+        "#recovery_token",
+      ];
+      const currentHash = window.location.hash;
+      const shouldRedirect = tokens.some((token) =>
+        currentHash.startsWith(token),
+      );
+      if (shouldRedirect) {
+        const urlSplit = document.URL.split("#");
+        window.location = `/admin/#${urlSplit[1]}`;
+      }
+    </script>
   </body>
 </html>

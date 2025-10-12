@@ -8,7 +8,10 @@ import App from './App.jsx'
 // Polyfill Buffer for browser environment (needed by gray-matter)
 window.Buffer = Buffer
 
-createRoot(document.getElementById('root')).render(
+const rootElement = document.getElementById('root');
+if (!rootElement) throw new Error('Root element not found');
+
+createRoot(rootElement).render(
   <StrictMode>
     <BrowserRouter>
       <App />

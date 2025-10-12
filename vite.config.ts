@@ -1,9 +1,10 @@
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
+import { htmlMetaInject } from './vite-plugins/html-meta-inject.js'
 
 // https://vite.dev/config/
 export default defineConfig({
-  plugins: [react()],
+  plugins: [react(), htmlMetaInject()],
   server: {
     port: 5173,
   },

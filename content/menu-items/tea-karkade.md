@@ -2,8 +2,9 @@
 name: Фруктовый Каркаде
 category: tea
 description: Цветочный чай из гибискуса с фруктовым послевкусием.
-prices:
-  - 50
+variants:
+  - price: 50
+    description: 'стандартная порция'
 available: true
 order: 2
 ---

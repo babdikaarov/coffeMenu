@@ -1,20 +1,25 @@
+import { useState, useEffect } from 'react';
+import { loadPromotionsData } from '../lib/content-loader';
+import { usePageContent } from '../hooks/useSettings';
+import type { Promotion, PromotionsContent } from '../types';
+
 export default function PromotionsBanner() {
-  const promotions = [
-    {
-      icon: '🎁',
-      title: 'Каждый 5-й кофе — бесплатно',
-      description: 'Every 5th coffee is free',
-    },
-    {
-      icon: '🎓',
-      title: 'Студенческая скидка 10%',
-      description: 'При предъявлении студенческого билета',
-    },
-  ]
+  const [promotions, setPromotions] = useState<Promotion[]>([]);
+  const { content: promotionsContent } = usePageContent<PromotionsContent>('promotions');
+
+  useEffect(() => {
+    const data = loadPromotionsData();
+    setPromotions(data);
+  }, []);
+
+  // Only show if there are promotions
+  if (!promotions || promotions.length === 0) {
+    return null;
+  }
 
   return (
     <section className="mt-16 mb-8">
-      <h2 className="category-heading mb-8">🎉 Акции</h2>
+      <h2 className="category-heading mb-8">{promotionsContent?.bannerTitle || "🎉 Акции"}</h2>
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
         {promotions.map((promo, index) => (

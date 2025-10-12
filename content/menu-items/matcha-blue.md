@@ -2,8 +2,9 @@
 name: Голубая
 category: matcha
 description: Матча с добавлением спирулины — освежающий напиток с морскими нотками.
-prices:
-  - 150
+variants:
+  - price: 150
+    description: 'стандартная порция'
 available: true
 order: 3
 ---
