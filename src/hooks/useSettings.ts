@@ -1,115 +1,115 @@
-import { useState, useEffect } from 'react';
-import type { 
-  GeneralSettings, 
-  PageSettings, 
+import { useState, useEffect } from "react";
+import {
+  loadGeneralSettings,
+  loadPageSettings,
+  loadMetadataSettings,
+} from "../lib/settings-loader";
+import type {
+  GeneralSettings,
+  PageSettings,
   MetadataSettings,
-  UseSettingsReturn, 
-  UsePageContentReturn 
-} from '../types';
+  UseSettingsReturn,
+  UsePageContentReturn,
+} from "../types";
 
-// No default settings - pure CMS approach
+// Helper to check if object is empty
+const isEmptyObject = (obj: any) =>
+  obj && Object.keys(obj).length === 0 && obj.constructor === Object;
 
-// No default page settings - pure CMS approach
-
-export function useGeneralSettings(): UseSettingsReturn<GeneralSettings | null> {
+// General settings hook
+export function useGeneralSettings(): UseSettingsReturn<GeneralSettings> {
   const [settings, setSettings] = useState<GeneralSettings | null>(null);
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
     async function loadSettings() {
       try {
-        const response = await fetch('/content/settings/general.json');
-        if (response.ok) {
-          const generalSettings = await response.json();
-          setSettings(generalSettings);
-        }
+        const generalSettings =
+          (await loadGeneralSettings()) as GeneralSettings | null;
+        setSettings(isEmptyObject(generalSettings) ? null : generalSettings);
       } catch (error) {
-        console.warn('Could not load general settings from CMS:', error);
+        console.warn("Could not load general settings:", error);
         setSettings(null);
       } finally {
         setLoading(false);
       }
     }
-
     loadSettings();
   }, []);
 
-  return { settings, loading };
+  return { settings: settings!, loading };
 }
 
-export function usePageSettings(): UseSettingsReturn<PageSettings | null> {
+// Page settings hook
+export function usePageSettings(): UseSettingsReturn<PageSettings> {
   const [settings, setSettings] = useState<PageSettings | null>(null);
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
     async function loadSettings() {
       try {
-        const response = await fetch('/content/settings/pages.json');
-        if (response.ok) {
-          const pageSettings = await response.json();
-          setSettings(pageSettings);
-        }
+        const pageSettings = (await loadPageSettings()) as PageSettings | null;
+        setSettings(isEmptyObject(pageSettings) ? null : pageSettings);
       } catch (error) {
-        console.warn('Could not load page settings from CMS:', error);
+        console.warn("Could not load page settings:", error);
         setSettings(null);
       } finally {
         setLoading(false);
       }
     }
-
     loadSettings();
   }, []);
 
-  return { settings, loading };
+  return { settings: settings!, loading };
 }
 
-// Convenience hooks for specific content - no fallbacks
-export function usePageContent<T>(pageName: keyof PageSettings): UsePageContentReturn<T | null> {
+// Convenience hooks
+export function usePageContent<T>(
+  pageName: keyof PageSettings,
+): UsePageContentReturn<T | null> {
   const { settings, loading } = usePageSettings();
-  return { 
-    content: (settings?.[pageName] as T) || null, 
-    loading 
+  return {
+    content: loading || !settings ? null : (settings[pageName] as T) || null,
+    loading,
   };
 }
 
 export function useUIMessages() {
   const { settings, loading } = usePageSettings();
-  return { 
-    messages: settings?.ui || null, 
-    loading 
+  return {
+    messages: loading || !settings ? null : settings.ui || null,
+    loading,
   };
 }
 
 export function useNavigationLabels() {
   const { settings, loading } = usePageSettings();
-  return { 
-    labels: settings?.navigation || null, 
-    loading 
+  return {
+    labels: loading || !settings ? null : settings.navigation || null,
+    loading,
   };
 }
 
-export function useMetadataSettings(): UseSettingsReturn<MetadataSettings | null> {
+// Metadata settings hook
+export function useMetadataSettings(): UseSettingsReturn<MetadataSettings> {
   const [settings, setSettings] = useState<MetadataSettings | null>(null);
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
     async function loadSettings() {
       try {
-        const response = await fetch('/content/settings/metadata.json');
-        if (response.ok) {
-          const metadataSettings = await response.json();
-          setSettings(metadataSettings);
-        }
+        const metadataSettings =
+          (await loadMetadataSettings()) as MetadataSettings | null;
+        setSettings(isEmptyObject(metadataSettings) ? null : metadataSettings);
       } catch (error) {
-        console.warn('Could not load metadata settings from CMS:', error);
+        console.warn("Could not load metadata settings:", error);
         setSettings(null);
       } finally {
         setLoading(false);
       }
     }
-
     loadSettings();
   }, []);
 
-  return { settings, loading };
+  return { settings: settings!, loading };
 }
