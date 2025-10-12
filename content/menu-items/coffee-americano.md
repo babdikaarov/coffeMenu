@@ -15,5 +15,5 @@ variants:
 available: true
 order: 1
 featured: true
-isNew: true
+isNew: false
 ---
