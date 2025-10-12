@@ -625,8 +625,46 @@ yamlContent += toYAML(config);
 const configPath = path.join(process.cwd(), "public", "admin", "config.yml");
 fs.writeFileSync(configPath, yamlContent);
 
+// Generate admin HTML with environment-specific Netlify scripts
+function generateAdminHTML() {
+  const netlifyScripts = `    <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+    <script>
+      if (window.netlifyIdentity) {
+        window.netlifyIdentity.on("init", (user) => {
+          if (!user) {
+            window.netlifyIdentity.on("login", () => {
+              document.location.href = "/admin/";
+            });
+          }
+        });
+      }
+    </script>`;
+
+  const adminHTML = `<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Content Manager</title>
+  </head>
+  <body>
+    <!-- Include the script that builds the page and powers Decap CMS -->
+    <script src="https://unpkg.com/decap-cms@^3.4.0/dist/decap-cms.js"></script>
+${netlifyScripts}
+  </body>
+</html>
+`;
+
+  return adminHTML;
+}
+
+// Write admin HTML
+const adminHTMLPath = path.join(process.cwd(), "public", "admin", "index.html");
+const adminHTMLContent = generateAdminHTML();
+fs.writeFileSync(adminHTMLPath, adminHTMLContent);
+
 console.log(
-  `CMS config generated for ${
+  `CMS config and admin HTML generated for ${
     isDev ? "development" : "production"
   } environment`,
 );

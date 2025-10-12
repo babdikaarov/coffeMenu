@@ -113,8 +113,7 @@ export function htmlMetaInject() {
           }
 
           // --- Inject Netlify Identity scripts ---
-          const netlifyScripts = `
-              <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+          const netlifyScripts = `              <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
               <script>
                 if (window.netlifyIdentity) {
                   window.netlifyIdentity.on("init", (user) => {
@@ -125,8 +124,7 @@ export function htmlMetaInject() {
                     }
                   });
                 }
-              </script>
-            `;
+              </script>`;
 
           html = html.replace(
             "<!-- SCRIPT tags will be injected here by Vite plugin -->",
