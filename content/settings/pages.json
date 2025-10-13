@@ -45,6 +45,11 @@
         "name": "smoothe",
         "title": "smoothe",
         "icon": "OK"
+      },
+      {
+        "name": "IMMUNE-TEA",
+        "title": "IMMUNE-TEA",
+        "icon": "🫖"
       }
     ]
   },
@@ -60,7 +65,10 @@
     "notFound": "Товар не найден",
     "unavailable": "Временно недоступно",
     "backToMenu": "← Назад к меню",
-    "newItemBadge": "new"
+    "newItemBadge": "new",
+    "available": "Доступно",
+    "outOfStock": "Такого ассортимента сейчас нет",
+    "noPriceText": "Цена не указана"
   },
   "footer": {
     "social": {
