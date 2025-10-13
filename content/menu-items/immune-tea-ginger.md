@@ -1,6 +1,6 @@
 ---
 name: Имбирный
-category: immune-tea
+category: IMMUNE-TEA
 description: Согревающий имбирный чай с медом и лимоном
 variants:
   - size: "0.35"
