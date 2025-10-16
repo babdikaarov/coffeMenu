@@ -1,6 +1,6 @@
 ---
 name: Молочный Улун
-category: tea
+category: chinaTea
 description: >-
   Зелёный Чай Молочный улун (1 категории)  
 
