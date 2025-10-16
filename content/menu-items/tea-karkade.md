@@ -1,6 +1,6 @@
 ---
 name: Фруктовый Каркаде
-category: tea
+category: chinaTea
 description: >-
   Чайный напиток «Фруктовый Каркаде»  
 
