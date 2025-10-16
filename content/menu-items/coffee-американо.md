@@ -1,5 +1,5 @@
 ---
-name: Американо beksultan
+name: Американо
 category: coffee
 description: Классический черный кофе, приготовленный на основе эспрессо и горячей воды.
 variants:
@@ -9,11 +9,8 @@ variants:
   - size: "0.35"
     price: 150
     description: большой
-  - size: "0.4"
-    price: 2000
-    description: экстра большой
 available: true
 order: 1
 featured: true
-isNew: true
+isNew: false
 ---

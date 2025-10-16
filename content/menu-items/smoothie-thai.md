@@ -1,6 +1,6 @@
 ---
 name: Тайский
-category: smoothie
+category: smoothe
 description: Освежающий тайский смузи с экзотическими фруктами
 variants:
   - price: 200
