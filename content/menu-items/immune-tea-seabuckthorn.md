@@ -1,6 +1,6 @@
 ---
-name: Облепиха
-category: IMMUNE-TEA
+name: Облепиховый
+category: immune-tea
 description: Витаминный чай с облепихой для укрепления иммунитета
 variants:
   - size: "0.35"
