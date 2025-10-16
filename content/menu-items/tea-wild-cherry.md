@@ -1,6 +1,6 @@
 ---
 name: Дикая Вишня
-category: tea
+category: chinaTea
 description: >-
   Чай чёрный «Дикая вишня» 
 
