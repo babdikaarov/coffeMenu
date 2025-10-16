@@ -1,6 +1,6 @@
 ---
 name: Ягодный
-category: IMMUNE-TEA
+category: immune-tea
 description: Ароматный чай с лесными ягодами и травами
 variants:
   - size: "0.35"
