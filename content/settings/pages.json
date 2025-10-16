@@ -50,6 +50,11 @@
         "name": "IMMUNE-TEA",
         "title": "IMMUNE-TEA",
         "icon": "🫖"
+      },
+      {
+        "name": "chinaTea",
+        "title": "Китайские Чии",
+        "icon": "🫖"
       }
     ]
   },
