@@ -1,6 +1,6 @@
 ---
 name: Жень-Шень
-category: tea
+category: chinaTea
 description: >-
   «Женьшень Улун» 1 сорт. 
 
