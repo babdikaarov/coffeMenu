@@ -4,22 +4,8 @@ import { resolve } from "path";
 
 const BASE_URL = "https://coffee-k.netlify.app";
 
-// Define all your static routes
-const routes = ["/", "/menu"];
-
-// Optionally, read dynamic menu items from CMS
-const menuItemsPath = resolve("content/menu-items");
-let menuSlugs: string[] = [];
-
-if (fs.existsSync(menuItemsPath)) {
-  const files = fs.readdirSync(menuItemsPath);
-  menuSlugs = files
-    .filter((f) => f.endsWith(".md"))
-    .map((f) => "/menu/" + f.replace(".md", ""));
-}
-
-// Combine all routes
-const allRoutes = [...routes, ...menuSlugs];
+// Only include the root URL since other routes are client-side rendered
+const allRoutes = ["/"];
 
 // Generate sitemap.xml
 const sitemapContent = `<?xml version="1.0" encoding="UTF-8"?>
@@ -30,7 +16,7 @@ ${allRoutes
   <url>
     <loc>${BASE_URL}${url}</loc>
     <changefreq>weekly</changefreq>
-    <priority>0.8</priority>
+    <priority>1.0</priority>
   </url>`,
   )
   .join("")}
