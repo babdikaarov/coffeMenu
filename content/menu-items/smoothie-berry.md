@@ -1,6 +1,6 @@
 ---
 name: Ягодный Чиа
-category: smoothie
+category: smoothe
 description: Смузи из свежих ягод с нежным вкусом с добавлением семян Чиа
 variants:
   - price: 200
