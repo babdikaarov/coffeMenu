@@ -1,6 +1,6 @@
 ---
 name: Пуэр
-category: tea
+category: chinaTea
 description: >-
   Чай чёрный китайский Пуэр 
 
