@@ -1,6 +1,6 @@
 ---
 name: Эрл Грей с Бергамотом
-category: tea
+category: chinaTea
 description: >-
   Чай чёрный «Эрл Грей» 
 
