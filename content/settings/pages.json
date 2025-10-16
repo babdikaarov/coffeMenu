@@ -28,12 +28,12 @@
     "categories": [
       {
         "name": "coffee",
-        "title": "КОФЕ",
+        "title": "Кофе",
         "icon": "☕"
       },
       {
         "name": "tea",
-        "title": "ЧАЙ",
+        "title": "Чай",
         "icon": "🍵"
       },
       {
