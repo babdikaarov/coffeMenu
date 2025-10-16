@@ -1,6 +1,6 @@
 ---
 name: Манговый ласси
-category: smoothie
+category: smoothe
 description: Традиционный индийский напиток на основе манго и йогурта
 variants:
   - price: 200
