@@ -1,6 +1,6 @@
 ---
 name: "Травяной Чай "
-category: tea
+category: chinaTea
 description: Чёрный чай с бергамотом и Зелёный Улун с добавлением мяты и тимьяна.
 variants:
   - size: "0.3"
