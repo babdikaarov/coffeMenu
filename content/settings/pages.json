@@ -47,7 +47,7 @@
         "icon": "🥤"
       },
       {
-        "name": "IMMUNE-TEA",
+        "name": "immune-tea",
         "title": "IMMUNE-TEA",
         "icon": "🫖"
       },
@@ -57,12 +57,12 @@
         "icon": "🫖"
       },
       {
-        "name": "LEMONADE",
+        "name": "lemonade",
         "title": "Лимонад",
         "icon": "🍋 🥤"
       },
       {
-        "name": "MILKSHAKE",
+        "name": "milkshake",
         "title": "Милкшейк",
         "icon": "🥛"
       }
