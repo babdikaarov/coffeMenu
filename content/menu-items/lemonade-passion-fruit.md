@@ -1,5 +1,5 @@
 ---
-name: Маракуйя
+name: Маракуйя-апельсин
 category: lemonade
 description: Освежающий лимонад с тропической маракуйей
 variants:
