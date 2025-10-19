@@ -5,6 +5,7 @@ description: Традиционный индийский напиток на о�
 variants:
   - price: 200
     description: Стандартный размер
+    size: "0.35"
 available: true
 order: 3
 ---
