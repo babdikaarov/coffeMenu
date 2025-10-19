@@ -21,4 +21,5 @@ variants:
     description: Большой
 available: true
 order: 1
+isNew: true
 ---
