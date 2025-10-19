@@ -5,7 +5,7 @@ description: Освежающий лимонад с тропической ма�
 variants:
   - price: 150
     description: Маленький
-    size: "0.5"
+    size: "0.35"
   - price: 200
     description: Большой
     size: "1"
