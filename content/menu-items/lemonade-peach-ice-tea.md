@@ -5,8 +5,10 @@ description: Холодный персиковый чай с освежающи�
 variants:
   - price: 150
     description: Маленький
+    size: "0.5"
   - price: 200
     description: Большой
+    size: "1"
 available: true
 order: 4
 ---
