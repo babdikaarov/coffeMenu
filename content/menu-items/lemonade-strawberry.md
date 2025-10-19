@@ -1,7 +1,7 @@
 ---
 name: Клубничный
 category: lemonade
-description: Сладкий летний лимонад с клубникой
+description: Сладкий лимонад с клубникой
 variants:
   - price: 150
     description: Маленький
