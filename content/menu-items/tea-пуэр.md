@@ -4,7 +4,7 @@ category: chinaTea
 description: >-
   Чай чёрный китайский Пуэр 
 
-  Описание: Листовой шу пуэр.  
+  Описание: Листовой Шу Пуэр.  
 
   Вкусовые качества: Настой темного цвета с насыщенным чуть терпким вкусом с оттенками древесной коры, ароматом луговых трав и длительным послевкусием.
 variants:
@@ -14,6 +14,6 @@ variants:
     price: 100
 available: true
 order: 1
-featured: false
-isNew: false
+featured: true
+isNew: true
 ---
