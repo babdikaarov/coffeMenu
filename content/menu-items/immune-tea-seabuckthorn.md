@@ -4,10 +4,10 @@ category: immune-tea
 description: Витаминный чай с облепихой для укрепления иммунитета
 variants:
   - size: "0.35"
-    price: 150
+    price: 50
     description: Средний
   - size: "0.5"
-    price: 200
+    price: 150
     description: Большой
 available: true
 order: 1
