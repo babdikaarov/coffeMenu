@@ -5,7 +5,7 @@ description: Матча с добавлением спирулины — осв�
 variants:
   - price: 150
     description: стандартная порция
-    size: "0.4"
+    size: "0.35"
 available: true
 order: 3
 ---
