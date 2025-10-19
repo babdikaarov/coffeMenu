@@ -7,7 +7,7 @@ variants:
     price: 50
     description: Средний
   - size: "0.5"
-    price: 100
+    price: 150
     description: Большой
 available: true
 order: 3
