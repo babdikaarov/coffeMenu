@@ -5,6 +5,7 @@ description: Насыщенный шоколадный молочный кокт
 variants:
   - price: 150
     description: Стандартный размер
+    size: "0.35"
 available: true
 order: 2
 ---
