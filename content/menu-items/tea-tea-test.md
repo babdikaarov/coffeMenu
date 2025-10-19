@@ -7,12 +7,12 @@ description: Имбирный чай — это ароматный и бодря
   пищеварение и придаёт энергию. Особенно полезен в холодное время года — он
   отлично согревает и помогает справиться с простудой.
 variants:
-  - size: "0.5"
-    price: 150
-    description: большая порция
   - size: "0.35"
-    price: 100
-    description: маленькая порция
+    price: 150
+    description: маленький
+  - size: "0.5"
+    price: 200
+    description: большой
 image: ""
 available: true
 order: 1
