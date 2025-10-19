@@ -1,5 +1,5 @@
 ---
-name: Персик Айс-ти
+name: Персиквый Айс-Ти
 category: lemonade
 description: Холодный персиковый чай с освежающим вкусом
 variants:
