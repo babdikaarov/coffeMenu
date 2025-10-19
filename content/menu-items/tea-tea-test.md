@@ -10,10 +10,10 @@ variants:
   - size: "0.5"
     price: 150
     description: большая порция
-  - size: "0.3"
+  - size: "0.35"
     price: 100
     description: маленькая порция
-image: /uploads/whatsapp-image-2025-10-12-at-16.48.11-2-.jpeg
+image: ""
 available: true
 order: 1
 ---
