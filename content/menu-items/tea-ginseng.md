@@ -10,7 +10,7 @@ variants:
     description: маленький
     size: "0.35"
   - size: "0.5"
-    price: 148
+    price: 150
     description: большой
 available: true
 order: 4
