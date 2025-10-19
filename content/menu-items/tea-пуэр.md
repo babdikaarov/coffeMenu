@@ -10,8 +10,10 @@ description: >-
 variants:
   - size: "0.3"
     price: 50
+    description: маленький
   - size: "0.5"
-    price: 100
+    price: 150
+    description: большой
 available: true
 order: 1
 featured: true
