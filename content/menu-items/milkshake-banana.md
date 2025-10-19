@@ -5,6 +5,7 @@ description: Классический банановый молочный кок
 variants:
   - price: 150
     description: Стандартный размер
+    size: "0.35"
 available: true
 order: 1
 ---
