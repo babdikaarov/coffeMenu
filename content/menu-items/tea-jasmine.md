@@ -9,7 +9,11 @@ description: >-
   Вкусовые качества: Нежный жасминовый аромат и токий легкий вкус с выраженным оттенком жасмина. Настой чая- светло-золотистый.
 variants:
   - price: 50
-    description: стандартная порция
+    description: маленький
+    size: "0.35"
+  - size: "0.5"
+    price: 150
+    description: большой
 available: true
 order: 6
 ---
