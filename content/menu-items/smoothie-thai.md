@@ -5,6 +5,7 @@ description: Освежающий тайский смузи с экзотиче�
 variants:
   - price: 200
     description: Стандартный размер
+    size: "0.35"
 available: true
 order: 1
 ---
