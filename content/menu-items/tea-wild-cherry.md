@@ -9,7 +9,11 @@ description: >-
   Вкусовые качества: сладкий, чуть пряный вкус и насыщенный аромат сочных ягод. Сочетается с молоком и сахаром.
 variants:
   - price: 50
-    description: стандартная порция
+    description: маленькая
+    size: "0.35"
+  - size: "0.5"
+    price: 150
+    description: большой
 available: true
 order: 1
 ---
