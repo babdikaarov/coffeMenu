@@ -9,6 +9,7 @@ variants:
   - size: "0.35"
     price: 150
     description: большой
+image: /uploads/латте-готовый.webp
 available: true
 order: 5
 ---
