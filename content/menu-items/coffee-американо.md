@@ -9,6 +9,7 @@ variants:
   - size: "0.35"
     price: 150
     description: большой
+image: /uploads/американо.jpg
 available: true
 order: 1
 featured: true
