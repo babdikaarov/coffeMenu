@@ -9,7 +9,7 @@ variants:
   - size: "0.35"
     price: 150
     description: большой
-image: /uploads/флэт-уайт-тест-2.webp
+image: ""
 available: true
 order: 6
 ---
