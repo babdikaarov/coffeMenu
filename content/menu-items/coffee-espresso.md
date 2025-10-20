@@ -9,6 +9,7 @@ variants:
   - size: "0.060"
     price: 150
     description: большой
+image: /uploads/эспрессо.webp
 available: true
 order: 3
 ---
