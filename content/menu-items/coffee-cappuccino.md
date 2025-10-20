@@ -9,6 +9,7 @@ variants:
   - size: "0.35"
     price: 150
     description: большой
+image: /uploads/капучино-тест-1-.jpeg
 available: true
 order: 2
 featured: true
