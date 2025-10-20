@@ -35,6 +35,7 @@ variants:
   - price: 150
     description: стандартная порция
     size: "0.35"
+image: /uploads/матча-голубая.jpg
 available: true
 order: 3
 ---
