@@ -12,6 +12,7 @@ variants:
   - size: "0.5"
     price: 150
     description: большой
+image: /uploads/жень-шень-улун.jpg
 available: true
 order: 4
 ---
