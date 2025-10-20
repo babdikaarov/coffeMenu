@@ -14,6 +14,7 @@ variants:
   - size: "0.5"
     price: 150
     description: большой
+image: /uploads/дикая-вишня-тест.jpg
 available: true
 order: 1
 ---
