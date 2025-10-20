@@ -15,6 +15,7 @@ variants:
   - size: "0.5"
     price: 150
     description: большой
+image: /uploads/эрлгрей-с-бергамотом.jpg
 available: true
 order: 5
 ---
