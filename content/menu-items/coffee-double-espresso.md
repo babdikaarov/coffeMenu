@@ -9,7 +9,7 @@ variants:
   - size: "0.120"
     price: 150
     description: большой
-image: /uploads/двойное-эспрессо.jpg
+image: /uploads/двойное-эспрессо.webp
 available: true
 order: 4
 ---
