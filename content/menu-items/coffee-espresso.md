@@ -6,7 +6,7 @@ variants:
   - size: "0.030"
     price: 100
     description: маленький
-image: ""
+image: /uploads/эспрессо-тест-1-.jpeg
 available: true
 order: 3
 ---
