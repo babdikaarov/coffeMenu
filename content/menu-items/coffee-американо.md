@@ -9,7 +9,7 @@ variants:
   - size: "0.35"
     price: 150
     description: большой
-image: /uploads/американо.jpg
+image: /uploads/американо-тест-1-.png
 available: true
 order: 1
 featured: true
