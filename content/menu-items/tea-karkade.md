@@ -14,6 +14,7 @@ variants:
   - size: "0.5"
     price: 150
     description: большой
+image: /uploads/фруктовый-каркаде.jpg
 available: true
 order: 2
 ---
