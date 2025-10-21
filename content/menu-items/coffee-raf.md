@@ -12,4 +12,5 @@ variants:
 image: /uploads/раф-тест-1.webp
 available: true
 order: 7
+featured: true
 ---
