@@ -6,6 +6,7 @@ variants:
   - price: 150
     description: Стандартный размер
     size: "0.35"
+image: /uploads/милкшейк-клубничный-готов.webp
 available: true
 order: 3
 ---
