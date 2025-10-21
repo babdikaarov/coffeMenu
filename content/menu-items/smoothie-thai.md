@@ -6,6 +6,7 @@ variants:
   - price: 200
     description: Стандартный размер
     size: "0.35"
+image: /uploads/тайский-смузи.jpg
 available: true
 order: 1
 ---
