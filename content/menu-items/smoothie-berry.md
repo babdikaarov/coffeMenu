@@ -6,6 +6,7 @@ variants:
   - price: 200
     description: Стандартный размер
     size: "0.35"
+image: /uploads/ягодный-чиа.jpeg
 available: true
 order: 2
 ---
