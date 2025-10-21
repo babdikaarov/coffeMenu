@@ -19,6 +19,7 @@ variants:
   - size: "0.5"
     price: 200
     description: Большой
+image: /uploads/ягодный-чай.jpg
 available: true
 order: 3
 ---
