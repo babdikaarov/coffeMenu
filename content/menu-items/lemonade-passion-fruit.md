@@ -9,6 +9,7 @@ variants:
   - price: 200
     description: Большой
     size: "1"
+image: /uploads/маракуйя-лайм-лимонад.jpeg
 available: true
 order: 1
 ---
