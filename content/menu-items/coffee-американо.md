@@ -12,6 +12,6 @@ variants:
 image: /uploads/американо-тест-1-.png
 available: true
 order: 1
-featured: true
+featured: false
 isNew: false
 ---
