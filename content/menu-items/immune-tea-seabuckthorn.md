@@ -19,6 +19,7 @@ variants:
   - size: "0.5"
     price: 200
     description: Большой
+image: /uploads/облепиховый-чай-тест.webp
 available: true
 order: 1
 isNew: true
