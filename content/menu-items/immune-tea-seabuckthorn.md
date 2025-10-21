@@ -19,7 +19,7 @@ variants:
   - size: "0.5"
     price: 200
     description: Большой
-image: /uploads/облепиховый-чай-ню.jpg
+image: /uploads/облепиховый-чай-для-сайта.webp
 available: true
 order: 1
 isNew: true
