@@ -16,7 +16,7 @@ variants:
   - size: "0.5"
     price: 200
     description: большой
-image: ""
+image: /uploads/имбирный-чай-готов.webp
 available: true
 order: 1
 ---
