@@ -17,4 +17,5 @@ variants:
 image: /uploads/фруктовый-каркаде.jpg
 available: true
 order: 2
+featured: true
 ---
