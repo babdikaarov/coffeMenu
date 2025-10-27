@@ -46,6 +46,9 @@ export interface GeneralSettings {
     address: string;
     instagram?: string;
   };
+  location?: {
+    link: string;
+  };
 }
 
 export interface CategoryConfig {

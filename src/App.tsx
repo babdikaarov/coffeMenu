@@ -10,6 +10,7 @@ import { useScrollToTop } from "./hooks/useScrollToTop";
 import { usePageSettings } from "./hooks/useSettings";
 import type { PageSettings } from "./types";
 import { TranslateButton } from "./components/TranslateButton";
+import Map2Gis from "./components/Map2Gis";
 
 function App() {
   const [clickCount, setClickCount] = useState(0);
@@ -57,21 +58,29 @@ function App() {
           <Route path="*" element={<NotFound settings={settings} />} />
         </Routes>
       </main>
-      <footer className="bg-primary text-white py-6 mt-12">
-        <FooterPromotionsBanner />
-        <div className="container mx-auto px-4 text-center flex justify-center flex-col">
-          <p
-            onClick={handleSecretClick}
-            className="cursor-default select-none inline-block"
-          >
-            <span className="px-1">
-              {settings?.footer?.copyright || "© 2025"}
-            </span>
-            {settings?.footer?.companyName || "Coffee & Tea Menu"}
-          </p>
-          <p className="text-sm mt-2 text-secondary/80">
-            {settings?.footer?.tagline || "Сделано с ❤️ и кофеином"}
-          </p>
+      <footer className="bg-primary text-white py-8 md:py-12 mt-12">
+        <div className="container mx-auto px-4 flex flex-col md:flex-row gap-4 md:gap-8 justify-center items-stretch">
+          <div className="w-full md:flex-1">
+            <Map2Gis />
+          </div>
+          <div className="w-full md:flex-1 flex flex-col justify-between">
+            <FooterPromotionsBanner />
+
+            <div className="text-center flex justify-center flex-col py-4 md:py-0 border-t border-white/20">
+              <p
+                onClick={handleSecretClick}
+                className="cursor-default select-none inline-block"
+              >
+                {settings?.footer?.copyright || "© 2025"}
+                <span className="px-1">
+                  {settings?.footer?.companyName || "Coffee & Tea Menu"}
+                </span>
+              </p>
+              <p className="text-sm mt-2 text-secondary/80">
+                {settings?.footer?.tagline || "Сделано с ❤️ и кофеином"}
+              </p>
+            </div>
+          </div>
         </div>
       </footer>
     </div>

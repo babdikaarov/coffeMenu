@@ -1,8 +1,8 @@
-# Production configuration for Netlify
+# Development configuration with local backend
 backend:
   name: "git-gateway"
   branch: "main"
-local_backend: false
+local_backend: true
 media_folder: "public/uploads"
 public_folder: "/uploads"
 locale: "ru"
@@ -155,6 +155,15 @@ collections:
                 name: "instagram"
                 widget: "string"
                 required: false
+          - label: "Карта (2GIS ссылка)"
+            name: "location"
+            widget: "object"
+            fields:
+              - label: "2GIS ссылка с координатами"
+                name: "link"
+                widget: "string"
+                default: "https://2gis.kg/bishkek/firm/70000001105358890/tab/info?m=74.585221%2C42.882321%2F20"
+                hint: "Полная ссылка на место в 2GIS с параметром 'm=longitude%2Clatitude%2Fzoom'"
       - label: "SEO и Метаданные"
         name: "metadata"
         file: "content/settings/metadata.json"

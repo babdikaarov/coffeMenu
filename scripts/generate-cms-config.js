@@ -209,11 +209,26 @@ const config = {
                 },
               ],
             },
+            {
+              label: "Карта (2GIS ссылка)",
+              name: "location",
+              widget: "object",
+              fields: [
+                {
+                  label: "2GIS ссылка с координатами",
+                  name: "link",
+                  widget: "string",
+                  default:
+                    "https://2gis.kg/bishkek/firm/70000001105358890/tab/info?m=74.585221%2C42.882321%2F20",
+                  hint: "Полная ссылка на место в 2GIS с параметром 'm=longitude%2Clatitude%2Fzoom'",
+                },
+              ],
+            },
           ],
         },
         {
           label: "SEO и Метаданные",
-          name: "metadata", 
+          name: "metadata",
           file: "content/settings/metadata.json",
           fields: [
             {
@@ -232,7 +247,8 @@ const config = {
                   label: "Описание сайта",
                   name: "description",
                   widget: "text",
-                  default: "Лучший кофе, чай и матча в городе. Свежеобжаренные зерна, авторские рецепты и уютная атмосфера.",
+                  default:
+                    "Лучший кофе, чай и матча в городе. Свежеобжаренные зерна, авторские рецепты и уютная атмосфера.",
                   hint: "Краткое описание сайта для поисковых систем (150-160 символов)",
                 },
                 {
@@ -240,7 +256,11 @@ const config = {
                   name: "keywords",
                   widget: "list",
                   allow_add: true,
-                  field: { label: "Ключевое слово", name: "keyword", widget: "string" },
+                  field: {
+                    label: "Ключевое слово",
+                    name: "keyword",
+                    widget: "string",
+                  },
                   default: ["кофе", "чай", "матча", "кафе", "Бишкек"],
                   hint: "Ключевые слова для поисковых систем",
                 },
