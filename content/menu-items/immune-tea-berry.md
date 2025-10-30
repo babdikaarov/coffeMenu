@@ -14,10 +14,10 @@ description: >
   Идеально для поднятия настроения и укрепления иммунитета
 variants:
   - size: "0.35"
-    price: 150
+    price: 100
     description: Средний
   - size: "0.5"
-    price: 200
+    price: 150
     description: Большой
 image: /uploads/ягодный-чай.jpg
 available: true
