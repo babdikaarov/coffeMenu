@@ -11,7 +11,7 @@ variants:
   - size: "0.35"
     price: 50
   - size: "0.5"
-    price: 150
+    price: 100
 image: /uploads/персиковый-улун.jpg
 available: true
 order: 1
