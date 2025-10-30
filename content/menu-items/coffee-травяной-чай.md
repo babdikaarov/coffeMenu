@@ -4,7 +4,7 @@ category: chinaTea
 description: Чёрный чай с бергамотом и Зелёный Улун с добавлением мяты и тимьяна.
 variants:
   - size: "0.5"
-    price: 150
+    price: 100
     description: большой
 available: true
 order: 1
