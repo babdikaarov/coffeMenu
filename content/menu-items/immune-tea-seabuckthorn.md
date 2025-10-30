@@ -14,10 +14,10 @@ description: >
   Ингредиенты: Свежая облепиха, мандарин, сироп Маракуйя, натуральный мёд, тимьян, сок лимона.
 variants:
   - size: "0.35"
-    price: 150
+    price: 100
     description: Средний
   - size: "0.5"
-    price: 200
+    price: 150
     description: Большой
 image: /uploads/облепиховый-чай-для-сайта.webp
 available: true
