@@ -11,10 +11,10 @@ description: >-
   Ингредиенты: Апельсин, имбирь свежий, сок лимона, цветочный мед, мята.
 variants:
   - size: "0.35"
-    price: 150
+    price: 100
     description: маленький
   - size: "0.5"
-    price: 200
+    price: 150
     description: большой
 image: /uploads/имбирный-чай-готов.webp
 available: true
