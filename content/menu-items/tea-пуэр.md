@@ -12,7 +12,7 @@ variants:
     price: 50
     description: маленький
   - size: "0.5"
-    price: 150
+    price: 100
     description: большой
 image: /uploads/пуэр.jpg
 available: true
