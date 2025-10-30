@@ -13,7 +13,7 @@ variants:
     description: маленький
     size: "0.35"
   - size: "0.5"
-    price: 150
+    price: 100
     description: большой
 image: /uploads/эрлгрей-с-бергамотом.jpg
 available: true
